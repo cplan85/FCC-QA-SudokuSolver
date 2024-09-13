@@ -126,7 +126,6 @@ suite('Unit Tests', () => {
 
             const randomIndex = Math.floor(Math.random() * 4);
             let randomValidPuzzleString = puzzlesAndSolutions[randomIndex][0];
-            console.log(randomValidPuzzleString, "RANDOM VALID PUZZLE")
 
             let solverResult = solver.solve(randomValidPuzzleString);
 
@@ -140,7 +139,7 @@ suite('Unit Tests', () => {
 
             let solverResult = solver.solve(randomString);
 
-            assert.property(solverResult, 'error', 'The result has an error');
+            assert.property(solverResult, 'error', 'Puzzle cannot be solved');
             //assert.equal(firstRegionCheck, false);
           });
 

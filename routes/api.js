@@ -21,7 +21,7 @@ module.exports = function (app) {
 
     value = Number(value)
 
-    console.log(value, "MY VALU")
+
     if (!isValidNumber(value)) {
       
       res.json({ error: 'Invalid value' })
